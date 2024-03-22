@@ -1,12 +1,79 @@
+/* フォントとカラー */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #FF6B6B;
+  --secondary-color: #FFE66D;
+  --text-color: #333;
+}
+
+/* 全体のスタイル */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
 }
 
-h1 {
-  color: #333;
+/* ヘッダー */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
 }
 
-p {
-  color: #666;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* フッター */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
